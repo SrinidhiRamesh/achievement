@@ -1,0 +1,161 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+background-image:url("13.jpeg");
+
+color:white;}
+
+
+
+
+.tablink {
+  background-color: #555;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 10px;
+  font-size: 17px;
+  width: 20%;
+}
+
+
+.tablink:hover {
+  background-color: #777;
+}
+
+
+.tabcontent {
+  
+  color: black;
+  display: none;
+  padding: 100px 100px;
+  
+  text-align: left;
+}
+
+
+#Srinidhi {background-image:url("21.jpeg");
+color:white;
+background-repeat: no-repeat;
+  background-size: 1300px 1000px;}
+#Priya {
+background-image:url("4.jpeg");
+background-repeat: no-repeat;
+  background-size: 1200px 700px;
+}
+#Vaibhavi {
+background-image:url("3.jpeg");
+background-repeat: no-repeat;
+  background-size: 1200px 900px;
+}
+#Yazhini{
+background-image:url("6.jpeg");
+background-repeat: no-repeat;
+  background-size: 1200px 700px;
+}
+#Prithi{
+background-image:url("7.jpeg");
+background-repeat: no-repeat;
+  background-size: 1200px 700px;
+}
+</style>
+<body>
+
+<center>
+<hr /> <h1><marquee behavior="scroll" direction="left">𝒜𝒞𝐻𝐼𝐸𝒱𝐸𝑀𝐸𝒩𝒯𝒮</marquee>
+</h1><hr /></center>
+<div id="Srinidhi" class="tabcontent">
+<center>
+  <img src="s.jpg" height="200" width="200">
+
+  <h1>ＳＲＩＮＩＤＨＩ</h1></center><br>
+<ul>
+<B>ACHIEVEMENTS:</B><BR><BR>
+  <p>
+  <li>Played badminton at zonal levels and have won certificates</li><br>
+  <li>Participated and won many prizes in singing competitons</li><br>
+  <li>Completed a course in c programming in csc</li><br>
+  <li>Participated and won prizes in dancing</li><br>
+  <li>Played and won prizes in throw ball<br></p><br>
+</div>
+
+<div id="Priya" class="tabcontent"><center>
+<img src="p.jpeg" height="200" width="200">
+  <h1>ＰＲＩＹＡ</h1></center><ul>
+<B>ACHIEVEMENTS:</B><BR><BR>
+ <p>
+ <li> Received certificates and awards in elocution</li><br>
+<li> Received certificates and awards debate  and literary speech</li><br>
+<li> Completed rbv in hindi debate, literary speech</li><br>
+<li> Completed rbv in hindi</li>
+</div>
+
+<div id="Vaibhavi" class="tabcontent"><center>
+<img src="v.jpeg" height="200" width="200">
+  <h1>𝕍𝔸𝕀𝔹ℍ𝔸𝕍𝕀</h1></center><ul>
+  <B>ACHIEVEMENTS:</B><BR><BR>
+  <p>
+  <li>Played badminton at zonal levels and have won certificates</li><br>
+  <li>Participated and won many prizes in singing competitons</li><br>
+  <li>Completed a course in c programming in csc</li><br>
+  <li>Participated and won prizes in dancing</li><br>
+  <li>Played and won prizes in throw ball<br></p><br>
+ 
+</div>
+
+<div id="Yazhini" class="tabcontent">
+<center>
+  <img src="y.jpeg" height="100" width="100">
+  <h1>𝕐𝔸ℤℍ𝕀ℕ𝕀</h1></center>
+  <p>
+  <ul>
+  <B>ACHIEVEMENTS:</B><BR><BR>
+  <li>Won kho-kho in school level intramurals..</li><br>
+<li>Completed a Python course in NPTEL</li><br>
+<li>Participated in school level minor competions n won</li><br>
+<li>Completed 3 levels of rbv in hindi</li><br>
+ </p>
+</div>
+
+<div id="Prithi" class="tabcontent">
+<center>
+<img src="p1.jpeg" height="100" width="100">
+  <h1>ℙℝ𝕀𝕋ℍ𝕀𝕐𝔸ℕ𝕂𝔸ℝ𝔸 𝔻𝔼𝕍𝕀</h1></center>
+  <p>
+  <ul>
+  <B>ACHIEVEMENTS:</B><BR><BR>
+  
+  <li>Perfect attendance award</li> <br>
+<li>Participation certificate in tamil debate</li><br>
+<li>Participated in school level minor competions n won</li><br>
+</div>
+
+<button class="tablink" onclick="openCity('Srinidhi', this, 'yellow')" id="defaultOpen">Srinidhi</button>
+<button class="tablink" onclick="openCity('Priya', this, 'BlanchedAlmond')">Priya</button>
+<button class="tablink" onclick="openCity('Vaibhavi', this, 'steelblue')">Vaibhavi</button>
+<button class="tablink" onclick="openCity('Yazhini', this, 'darkgrey')">Yazhini</button>
+<button class="tablink" onclick="openCity('Prithi', this, 'darkslateblue')">Prithi</button>
+
+<script>
+function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
